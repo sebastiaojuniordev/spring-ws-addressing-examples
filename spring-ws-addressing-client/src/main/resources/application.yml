@@ -4,3 +4,10 @@ server:
 logging:
   level:
     org.springframework.ws.client.MessageTracing: trace
+
+app:
+  server:
+    uri: http://localhost:8181/ws
+    callback-action: http://www.sebastiaojunior.dev/server/domain/country/getCountry
+  response-server:
+    uri: http://localhost:8282/ws

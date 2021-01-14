@@ -14,7 +14,7 @@ import org.springframework.xml.transform.StringSource;
 
 import br.com.sebastiao.junior.configuration.WsConfiguration;
 import br.com.sebastiao.junior.domain.country.Countries;
-import br.com.sebastiao.junior.domain.country.ws.CountryServerEndpoint;
+import br.com.sebastiao.junior.domain.country.endpoint.CountryServerEndpoint;
 
 import javax.xml.transform.Source;
 import java.nio.file.Files;

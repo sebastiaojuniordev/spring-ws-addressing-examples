@@ -1,4 +1,4 @@
-package br.com.sebastiao.junior.domain.country.ws;
+package br.com.sebastiao.junior.domain.country.endpoint;
 
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;

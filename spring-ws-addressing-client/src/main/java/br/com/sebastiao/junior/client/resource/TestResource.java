@@ -3,6 +3,7 @@ package br.com.sebastiao.junior.client.resource;
 import java.net.URISyntaxException;
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.sebastiao.junior.client.domain.country.CountryWsClient;
@@ -19,9 +20,14 @@ public class TestResource {
     	return "It's working!";
     }
     
-    @RequestMapping("/test")
+    @RequestMapping("/default")
     public void kick() throws URISyntaxException {
         String name = "Poland";
+        client.getCountry(name);
+    }
+    
+    @RequestMapping("/test")
+    public void test(@RequestParam("name") String name) throws URISyntaxException {
         client.getCountry(name);
     }
 }
